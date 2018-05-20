@@ -390,7 +390,7 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &177427845
 GameObject:
@@ -684,7 +684,7 @@ Transform:
   - {fileID: 997140609}
   - {fileID: 1043763638}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &453548873
 GameObject:
@@ -1981,7 +1981,7 @@ Prefab:
     - target: {fileID: 224625468030416760, guid: c967759ce7c4ef34781e6c118861801a,
         type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224625468030416760, guid: c967759ce7c4ef34781e6c118861801a,
         type: 2}
@@ -2109,6 +2109,67 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.54}
   m_EdgeRadius: 0
+--- !u!1 &1314094396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1314094399}
+  - component: {fileID: 1314094398}
+  - component: {fileID: 1314094397}
+  m_Layer: 0
+  m_Name: DestoryLine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1314094397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1314094396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 262c41d54162b1f4ab290f1549ebdd09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!68 &1314094398
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1314094396}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -42.20574, y: -4.1788025}
+  - {x: -32.39414, y: -16.536158}
+  - {x: 33.292866, y: -17.01476}
+  - {x: 33.934772, y: -15.576931}
+  - {x: 42.51279, y: -7.625433}
+--- !u!4 &1314094399
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1314094396}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.71158075, y: 3.2944136, z: -0.40302038}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1317169197
 GameObject:
   m_ObjectHideFlags: 0

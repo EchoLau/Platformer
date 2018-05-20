@@ -34,11 +34,9 @@ public class EnemyHealth : MonoBehaviour {
 	void Death()
 	{
 		isDead = true;
-		polygonCollider.isTrigger = true;  // why does it has to become a trigger?
+		polygonCollider.isTrigger = true;  // so the enemy won't touch other things
 
 		GetComponent<Rigidbody2D> ().AddTorque (Random.Range (deathSpinMin, deathSpinMax));
-	
-	//	Destroy (gameobject, 2f);
 	
 	}
 

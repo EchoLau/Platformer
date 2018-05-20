@@ -5,6 +5,7 @@ using UnityEngine;
 public class DeathRiver : MonoBehaviour {
 
 
+	/*
 	Collider2D Col;
 
 	void Start () {
@@ -19,20 +20,25 @@ public class DeathRiver : MonoBehaviour {
 
 	}
 
+*/
+
 
 
 
 	void OnTriggerEnter2D (Collider2D other)
 	{
 
-	
 		if (other.gameObject.CompareTag ("Player")) 
-		
 		{
-			Destroy (other.gameObject, 2f);
-			Application.LoadLevel (Application.loadedLevel);
-		}
 
+			Application.LoadLevel (Application.loadedLevel);
+		} 
+
+		if 
+			(other.gameObject.CompareTag ("Enemy"))
+		{
+			Destroy (other.gameObject);
+		}
 
 	}
 }
